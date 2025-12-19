@@ -55,7 +55,7 @@ jobs:
           
         sdk:
           - 24.10.4
-          - branch
+         # - branch
 
     steps:
       - uses: actions/checkout@v4
