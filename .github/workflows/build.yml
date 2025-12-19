@@ -54,8 +54,8 @@ jobs:
            - x86_64
           
         sdk:
-          - 22.03.7
-          - SNAPSHOT
+          - 24.10.4
+          - branch
 
     steps:
       - uses: actions/checkout@v4
