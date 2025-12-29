@@ -28,7 +28,7 @@ jobs:
       fail-fast: false
       matrix:
         arch:
-          #- aarch64_cortex-a53
+           - aarch64_cortex-a53
           #- aarch64_cortex-a72
           #- aarch64_generic
           # - arm_arm1176jzf-s_vfp
@@ -55,7 +55,7 @@ jobs:
           
         sdk:
           - 24.10.4
-         # - branch
+          - SNAPSHOT
 
     steps:
       - uses: actions/checkout@v4
@@ -118,5 +118,5 @@ jobs:
              ${{ github.event.inputs.text }}
            
             tag_name: ${{ env.TAG }}
-            files: EasyTier-${{ env.TAG }}-${{ matrix.arch }}-${{ matrix.sdk }}.zip
+            文件: EasyTier-${{ env.TAG }}-${{ matrix.arch }}-${{ matrix.sdk }}.zip
  
